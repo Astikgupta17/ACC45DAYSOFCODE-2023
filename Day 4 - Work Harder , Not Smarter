@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int test,l,v1,v2,t1,t2;
+	cin>>test;
+	
+	while(test--){
+	    cin>>l>>v1>>v2;
+	    t1= l/v1;
+	    t2=l/v2;
+	    
+	    if(l%v1>0)
+	    t1++;
+	    
+	    if(l%v2>0)
+	    t2++;
+	    
+	    if(t2<t1)
+	    cout<<t1-t2<<endl;
+	    
+	    else
+	    cout<<-1<<endl;
+	}
+	return 0;
+}
