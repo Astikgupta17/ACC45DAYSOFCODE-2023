@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,p,c,i,a[5];
+	cin>>t;
+	while(t--){
+	 for(i=0;i<5;i++)
+	 cin>>a[i];
+     cin>>p;
+     
+	 if((a[0]+a[1]+a[2]+a[3]+a[4])*p<=120)
+	 cout<<"No"<<endl;
+	 
+	 else
+	 cout<<"Yes"<<endl;
+	}
+	return 0;
+}
