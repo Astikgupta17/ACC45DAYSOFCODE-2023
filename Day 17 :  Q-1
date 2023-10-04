@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,n;
+	cin>>t;
+	while(t--){
+	    cin>>n;
+	    
+	    if(n<=15){
+	        if(n<=10)
+	        cout<<"Lower Double"<<endl;
+	        
+	        else
+	        cout<<"Lower Single"<<endl;
+	    }
+	    
+	    else{
+	        if(n>25)
+	        cout<<"Upper Single"<<endl;
+	        
+	        else
+	        cout<<"Upper Double"<<endl;
+	    }
+	}
+	return 0;
+}
