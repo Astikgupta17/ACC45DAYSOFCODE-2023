@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,w,x,y,z;
+	cin>>t;
+	
+	while(t--){
+	    cin>>w>>x>>y>>z;
+	    w = w + z*(x-y) ;
+	    cout<<w<<endl;
+	}
+	
+	return 0;
+}
