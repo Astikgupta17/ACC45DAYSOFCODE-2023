@@ -1,0 +1,37 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+	int t;
+	cin >> t;
+	
+	while(t--) {
+	    int b[3], a[3];	    
+	    for(int i = 0; i < 3; i++)
+       cin>>b[i];
+	    
+	    for(int i = 0; i < 3; i++) 
+       cin>>a[i];
+	    
+	    sort(b,b + 3,greater<int>());
+	    sort(a,a + 3, greater<int>());
+	    	    
+	    int as = 0, bs = 0;
+	    
+	    for(int i = 0; i < 3; i++){
+	        as = as*10 + a[i];
+	        bs = bs*10 + b[i];
+	    }
+
+	    if(as == bs) 
+      cout<<"Tie"<<endl;
+
+      else if(as > bs) 
+      cout<<"Bob"<<endl;
+	    
+      else 
+      cout<<"Alice"<<endl;	    	    
+	}	
+	return 0;
+}
