@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,n,i,sum,atten;
+	cin>>t;
+	while(t--){
+	    cin>>n;
+	    int b[n];
+	    sum=0;
+	    
+	    for(i=0;i<n;i++){
+	    cin>>b[i];
+	    sum+=b[i];
+	    }
+	    
+       atten = (sum +(120-n))/120 ;
+
+       if(atten>=75)
+       cout<<"Yes"<<endl;
+       
+       else
+       cout<<"No"<<endl;
+
+	}
+	return 0;
+}
