@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,l,r,m;
+	cin>>t;
+	while(t--){
+	    cin>>l>>r>>m;
+	    
+	    if(l+r>m){
+	        if(l<=m && l<r)
+	        cout<<l<<endl;
+	        
+	        else if(r<=m && r<l)
+	        cout<<r<<endl;
+	        
+      	    }
+	    
+	    else
+	    cout<<l+r<<endl;
+	}
+	return 0;
+}
