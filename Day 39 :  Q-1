@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,n,a,b;
+	cin>>t;
+	while(t--){
+	 cin>>n>>a>>b;
+	 cout<<360-a-b + 2*((n+1)/2 +n/2 )<<endl;
+	}
+	return 0;
+}
