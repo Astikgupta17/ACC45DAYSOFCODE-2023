@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,n,m;
+	cin>>t;
+	while(t--){
+	  cin>>n>>m;
+	  if((n-n/10)>m)
+	  cout<<"Dining"<<endl;
+	  
+	  else if((n-n/10)<m)
+	  cout<<"Online"<<endl;
+	  
+	  else
+	  cout<<"Either"<<endl;
+	}
+	return 0;
+}
